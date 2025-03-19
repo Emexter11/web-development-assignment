@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Web Page</title>
+
+</head>
+
+<body>
+
+  <!-- Ordered List with Roman Numerals -->
+  <h2>Ordered List (Roman Numerals)</h2>
+  <ol type="I">
+    <li>Introduction to HTML</li>
+    <li>CSS Basics</li>
+    <li>JavaScript Overview</li>
+    <li>Understanding Forms</li>
+    <li>Building a Website</li>
+  </ol>
+
+  <!-- External Image from Pexels -->
+  <h2>Bird of Prey</h2>
+  <img src="https://images.pexels.com/photos/30931224/pexels-photo-30931224/free-photo-of-majestic-brahminy-kite-perched-on-tree-branch.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Bird of prey">
+
+  <!-- Contact Table -->
+  <h2>Contact List</h2>
+  <table border="1">
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Mobile</th>
+      <th>Email</th>
+    </tr>
+    <tr>
+      <td>Jay Lewis</td>
+      <td>183 Street, ATL</td>
+      <td>+1 234 876 903</td>
+      <td>jay@example.com</td>
+    </tr>
+    <tr>
+      <td>Mary Jane</td>
+      <td>746 street, CA</td>
+      <td>+1 456 654 671</td>
+      <td>mary@example.com</td>
+    </tr>
+    <tr>
+      <td>Mike Johnson</td>
+      <td>789 Blvd, TX</td>
+      <td>+1 555 666 777</td>
+      <td>mike@example.com</td>
+    </tr>
+    <tr>
+      <td>Lisa Brown</td>
+      <td>321 Lane, FL</td>
+      <td>+1 123 987 654</td>
+      <td>lisa@example.com</td>
+    </tr>
+    <tr>
+      <td>Tom Wilson</td>
+      <td>654 Road, WA</td>
+      <td>+1 888 999 000</td>
+      <td>tom@example.com</td>
+    </tr>
+  </table>
+
+  <!-- Registration Form -->
+  <h2>Registration Form</h2>
+  <form action="submit.php" method="post">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required> <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+    <label for="mobile">Number:</label>
+    <input type="text" id="mobile" name="mobile" placeholder="Enter your number" required><br><br>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required><br><br>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+      <option value="">Select Gender</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+    </select><br><br>
+
+    <fieldset>
+      <legend>Preferred Contact Method:</legend>
+      <label><input type="radio" name="contact" value="email" required> Email</label>
+      <label><input type="radio" name="contact" value="phone"> Phone</label>
+    </fieldset><br><br>
+
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="updates" required> Receive Updates</label> <br><br>
+      <label><input type="checkbox" name="terms" required> Agree to Terms & Conditions</label>
+    </div><br><br>
+
+    <button type="submit">Register</button>
+  </form>
+
+</body>
+
+</html>
